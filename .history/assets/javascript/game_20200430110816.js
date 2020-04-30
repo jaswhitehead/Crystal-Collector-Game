@@ -19,7 +19,7 @@ var crystal = {
     },
     blue:
     {
-        name: "green",
+        name: "blue",
         value: 0
     },
 }
@@ -47,7 +47,7 @@ var startGame = function () {
     // Console log to test 
     console.log("------------------------");
     console.log("Target Score: " + targetScore);
-    console.log("purple: " + crystal.purple.value + " | yellow: " + crystal.yellow.value + " | red: " + crystal.red.value + " | green: " + crystal.green.value);
+    console.log("Purple: " + crystal.purple.value + " | Yellow: " + crystal.yellow.value + " | Red: " + crystal.yellow.value + " | Red: " + crystal.red.value + " | Green: " + crystal.green.value);
     console.log("------------------------");
 };
 

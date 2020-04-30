@@ -39,15 +39,15 @@ var startGame = function () {
     crystal.purple.value = getRandom(1, 12);
     crystal.yellow.value = getRandom(1, 12);
     crystal.red.value = getRandom(1, 12);
-    crystal.blue.name = getRandom(1, 12);
+    crystal.green.value = getRandom(1, 12);
     
-    // Change the HTML to reflect all of these changes
+        // Change the HTML to reflect all of these changes
     $("#yourScore").html(currentScore);
     $("#targetScore").html(targetScore);
     // Console log to test 
     console.log("------------------------");
     console.log("Target Score: " + targetScore);
-    console.log("purple: " + crystal.purple.value + " | yellow: " + crystal.yellow.value + " | red: " + crystal.red.value + " | green: " + crystal.green.value);
+    console.log("Purple: " + crystal.purple.value + " | Yellow: " + crystal.yellow.value + " | Red: " + crystal.yellow.value + " | Red: " + crystal.red.value + " | Green: " + crystal.green.value);
     console.log("------------------------");
 };
 
