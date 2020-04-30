@@ -44,7 +44,11 @@ var startGame = function () {
     // Change the HTML to reflect all of these changes
     $("#yourScore").html(currentScore);
     $("#targetScore").html(targetScore);
-    
+    // Console log to test 
+    console.log("------------------------");
+    console.log("Target Score: " + targetScore);
+    console.log("purple: " + crystal.purple.value + " | yellow: " + crystal.yellow.value + " | red: " + crystal.red.value + " | green: " + crystal.green.value + "");
+    console.log("------------------------");
 };
 
 // Respond to clicks on the crystals
