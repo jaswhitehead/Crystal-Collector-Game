@@ -19,7 +19,7 @@ var crystal = {
     },
     blue:
     {
-        name: "green",
+        name: "Green",
         value: 0
     },
 }
