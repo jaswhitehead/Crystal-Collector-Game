@@ -19,7 +19,7 @@ var crystal = {
     },
     blue:
     {
-        name: "Green",
+        name: "Blue",
         value: 0
     },
 }
@@ -28,22 +28,29 @@ var crystal = {
 //---------------------------------------------------------
 startGame();
 
-$("#purple").click(function () {
-    addValues(crystal.purple);
+$("#red").click(function () {
+    addValues(crystal.red);
 });
+
+
+$("#white").click(function () {
+    addValues(crystal.white);
+});
+
 
 $("#yellow").click(function () {
     addValues(crystal.yellow);
 });
 
-$("#red").click(function () {
-    addValues(crystal.red);
+
+$("#purple").click(function () {
+    addValues(crystal.purple);
 });
 
-$("#green").click(function () {
-    addValues(crystal.green);
-});
 
+$("#blue").click(function () {
+    addValues(crystal.blue);
+});
 // Scores: target and current
 var targetScore = 0;
 var currentScore = 0;
@@ -64,18 +71,18 @@ var startGame = function () {
     // Set a new target score (19-120)
     targetScore = getRandom(19, 120);
     // Set different values for each of the crystals (1-12)
-    crystal.purple.value = getRandom(1, 12);
-    crystal.yellow.value = getRandom(1, 12);
     crystal.red.value = getRandom(1, 12);
-    crystal.green.value = getRandom(1, 12);
-    
-        // Change the HTML to reflect all of these changes
+    crystal.white.value = getRandom(1, 12);
+    crystal.yellow.value = getRandom(1, 12);
+    crystal.purple.value = getRandom(1, 12);
+    crystal.blue.value = getRandom(1, 12);
+    // Change the HTML to reflect all of these changes
     $("#yourScore").html(currentScore);
     $("#targetScore").html(targetScore);
     // Console log to test 
     console.log("------------------------");
     console.log("Target Score: " + targetScore);
-    console.log("Purple: " + crystal.purple.value + " | Yellow: " + crystal.yellow.value + " | Red: " + crystal.yellow.value + " | Red: " + crystal.red.value + " | Green: " + crystal.green.value);
+    console.log("Red: " + crystal.red.value + " | White: " + crystal.white.value + " | Yellow: " + crystal.yellow.value + " | Purple: " + crystal.purple.value + " | Blue: " + crystal.blue.value);
     console.log("------------------------");
 };
 

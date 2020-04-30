@@ -64,18 +64,18 @@ var startGame = function () {
     // Set a new target score (19-120)
     targetScore = getRandom(19, 120);
     // Set different values for each of the crystals (1-12)
-    crystal.purple.value = getRandom(1, 12);
-    crystal.yellow.value = getRandom(1, 12);
     crystal.red.value = getRandom(1, 12);
-    crystal.green.value = getRandom(1, 12);
-    
-        // Change the HTML to reflect all of these changes
+    crystal.white.value = getRandom(1, 12);
+    crystal.yellow.value = getRandom(1, 12);
+    crystal.purple.value = getRandom(1, 12);
+    crystal.blue.value = getRandom(1, 12);
+    // Change the HTML to reflect all of these changes
     $("#yourScore").html(currentScore);
     $("#targetScore").html(targetScore);
     // Console log to test 
     console.log("------------------------");
     console.log("Target Score: " + targetScore);
-    console.log("Purple: " + crystal.purple.value + " | Yellow: " + crystal.yellow.value + " | Red: " + crystal.yellow.value + " | Red: " + crystal.red.value + " | Green: " + crystal.green.value);
+    console.log("Red: " + crystal.red.value + " | White: " + crystal.white.value + " | Yellow: " + crystal.yellow.value + " | Purple: " + crystal.purple.value + " | Blue: " + crystal.blue.value);
     console.log("------------------------");
 };
 

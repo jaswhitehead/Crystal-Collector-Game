@@ -75,7 +75,7 @@ var startGame = function () {
     // Console log to test 
     console.log("------------------------");
     console.log("Target Score: " + targetScore);
-    console.log("Purple: " + crystal.purple.value + " | Yellow: " + crystal.yellow.value + " | Red: " + crystal.yellow.value + " | Red: " + crystal.red.value + " | Green: " + crystal.green.value);
+    console.log("Red: " + crystal.red.value + " | White: " + crystal.white.value + " | Yellow: " + crystal.yellow.value + " | Purple: " + crystal.purple.value + " | Blue: " + crystal.blue.value);
     console.log("------------------------");
 };
 
