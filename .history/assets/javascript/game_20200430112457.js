@@ -17,7 +17,7 @@ var crystal = {
         name: "red",
         value: 0
     },
-    green:
+    blue:
     {
         name: "green",
         value: 0
@@ -39,7 +39,7 @@ var startGame = function () {
     crystal.purple.value = getRandom(1, 12);
     crystal.yellow.value = getRandom(1, 12);
     crystal.red.value = getRandom(1, 12);
-    crystal.green.value = getRandom(1, 12);
+    crystal.blue.name = getRandom(1, 12);
     
     // Change the HTML to reflect all of these changes
     $("#yourScore").html(currentScore);
@@ -49,13 +49,14 @@ var startGame = function () {
 
 // Respond to clicks on the crystals
 var addValues = function (crystal) {
+    // Change current score
     currentScore = currentScore + crystal.value;
-    
     // Change the HTML to reflect changes in current score
     $("#yourScore").html(currentScore);
-    
     // Call checkWin Function
     checkWin();
+    // Testing console
+    console.log("Your score " + currentScore);
 }
 
 // Check if user Won or Lost and reset the game
@@ -83,7 +84,7 @@ var checkWin = function () {
         
         // Restart the game
         setTimeout(function () {
-            alert("Start New Game!");
+            alert("Start New Game");
             startGame();
         }, 00);
     }
