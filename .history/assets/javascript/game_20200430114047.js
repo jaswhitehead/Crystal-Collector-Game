@@ -66,11 +66,7 @@ var checkWin = function () {
         lossCount++;
         // Change HTML to reflect changes
         $("#lossCount").html(lossCount);
-        // Restart the game
-        setTimeout(function () {
-            alert("Sorry, you went over. You Lost");
-            startGame();
-        }, 00);
+      
     }
     else if (currentScore == targetScore) {
         alert("Congratulations! You Won!");

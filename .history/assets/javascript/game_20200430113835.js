@@ -62,13 +62,14 @@ var addValues = function (crystal) {
 var checkWin = function () {
     // Check if currentScore is larger than targetScore
     if (currentScore > targetScore) {
+        console.log("You went over and you lost");
         // Add to loss counter
         lossCount++;
         // Change HTML to reflect changes
         $("#lossCount").html(lossCount);
         // Restart the game
         setTimeout(function () {
-            alert("Sorry, you went over. You Lost");
+            alert("Sorry. You Lost");
             startGame();
         }, 00);
     }
