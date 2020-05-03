@@ -68,12 +68,11 @@ var checkWin = function () {
         $("#lossCount").html(lossCount);
         console.log("Line 69")
         // Restart the game
-    
         setTimeout(function () {
             alert("Sorry, you lost. Start New Game!");
             console.log("Timeout 73")
             startGame();
-        }, 01);
+        }, 00);
     }
     else if (currentScore == targetScore) {
         alert("Congratulations! You Won!");
@@ -84,11 +83,9 @@ var checkWin = function () {
         $("#winCount").html(winCount);
         
         // Restart the game
-        setTimeout(function () {
-            alert("Start New Game!");
-            console.log("Timout 87")
-            startGame();
-        }, 01);
+        function reset() {
+            totScore = 0;
+            $('#yourScore').text(targetScore);
     }
 }
 // MAIN PROCESS
